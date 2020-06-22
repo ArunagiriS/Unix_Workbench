@@ -20,6 +20,6 @@ while [[ $result -eq 0 ]]
 do
 	echo "Can you guess how many files are there in this directory"
 	read userGuessCount
-	fileCount=$(ls -l | grep ^- | wc -l)
+	fileCount=$(ls -a | grep ^- | wc -l)
 	validateInput
 done
